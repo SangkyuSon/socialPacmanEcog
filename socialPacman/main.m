@@ -10,8 +10,8 @@ for tr = 1:opt.predefined.trialNo
     [opt,data] = trialReset(opt);
     
     [opt,data] = phase1(opt,data);
-    %[opt,data] = phase2(opt,data);
-    %[opt,data] = phase3(opt,data);
+    [opt,data] = phase2(opt,data);
+    [opt,data] = phase3(opt,data);
 
     opt = saveData(opt,data);
    
